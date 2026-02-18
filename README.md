@@ -22,9 +22,7 @@ The goal was to implement a production-like environment showcasing security, per
 
 ## Architecture
 
-![Architecture Diagram](architecture/<img width="592" height="1206" alt="Architecture" src="https://github.com/user-attachments/assets/2f648dd8-e271-413d-b518-7f1f905e5f50" />
-<img width="592" height="1206" alt="Architecture" src="https://github.com/user-attachments/assets/2f648dd8-e271-413d-b518-7f1f905e5f50" />
-)
+![Architecture Diagram](architecture/<img width="592" height="1206" alt="Architecture" src="https://github.com/user-attachments/assets/2f648dd8-e271-413d-b518-7f1f905e5f50" />)
 
 ---
 
