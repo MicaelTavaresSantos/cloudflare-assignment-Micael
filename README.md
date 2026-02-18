@@ -1,67 +1,6 @@
 # cloudflare-assignment-Micael
 CloudFlare Application Services Assignment - Micael Santos
 
-# Cloudflare Application Services Assignment
-
-## Overview
-
-This project demonstrates the deployment of a secure and performant web application using Cloudflare services integrated with an AWS origin environment.
-
-The architecture includes:
-
-- Cloudflare DNS and Proxy
-- SSL/TLS Full (Strict)
-- Origin server on AWS EC2
-- Reverse proxy and WSGI application
-- Cloudflare Tunnel
-- Cloudflare Zero Trust Access
-- Cloudflare Worker
-- Cloudflare R2 Object Storage
-
-The goal was to implement a production-like environment showcasing security, performance, and access control best practices.
-
----
-
-## Architecture
-
-![Architecture Diagrams](architecture/escrever)
-
----
-
-## Components
-
-### Origin Application
-
-A simple Flask application that returns HTTP request headers.
-
-Gunicorn is used as a production WSGI server and managed with systemd for persistence.
-
-### Cloudflare Tunnel
-
-The origin is not exposed directly to the internet. Traffic is securely routed via Cloudflare Tunnel.
-
-### Zero Trust Access
-
-Authentication is enforced before accessing protected resources using Cloudflare Access with One-Time PIN.
-
-### Cloudflare Worker + R2
-
-A Worker intercepts requests to `/secure` and retrieves a file from an R2 bucket.
-
----
-
-## Deployment Steps
-
-### 1. AWS EC2 Setup
-
-- Ubuntu instance deployed
-- Security groups configured
-- SSH access enabled
-
-### 2. Application Deployment
-
-# Cloudflare Application Services Assignment
-
 ## Overview
 
 This project demonstrates the deployment of a secure and performant web application using Cloudflare services integrated with an AWS origin environment.
