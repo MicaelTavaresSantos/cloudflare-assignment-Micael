@@ -1,0 +1,8 @@
+tunnel: c69ccf08-c8fb-4de6-a100-ea1c5xxxxxxx
+credentials-file: /home/ubuntu/.cloudflared/c69ccf08-c8fb-4de6-a100-ea1c5xxxxxxx.json
+
+
+ingress:
+  - hostname: tunnel.micael-cf-assignment.com
+    service: http://localhost:5000
+  - service: http_status:404
